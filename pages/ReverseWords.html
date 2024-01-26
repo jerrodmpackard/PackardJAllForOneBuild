@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Reverse Words</title>
+</head>
+
+<body class="bg-background bg-cover bg-fixed">
+    <!-- Back to Main Menu button -->
+    <a href="../index.html">
+        <button type="button"
+            class="ms-5 mt-5 px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Back
+            to Main Menu</button>
+    </a>
+
+    <!-- Header text -->
+    <h1 class="text-5xl lg:text-7xl font-bold text-center pt-24 pb-24">Reverse Words</h1>
+    <h2 class="text-2xl lg:text-5xl text-center pb-20">Enter something below to see it reversed</h2>
+
+    <!-- Div for API Result text -->
+    <div id="reverseWordsDiv"></div>
+
+    <!-- Input field and submit button -->
+    <div class="flex flex-col justify-center items-center gap-4 sm:flex-row">
+        <div>
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number</label>
+            <input type="text" id="reverseWordsInput"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+
+        <button type="button" id="reverseWordsButton"
+            class="mt-7 px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+    </div>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

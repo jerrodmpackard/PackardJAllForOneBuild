@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Mad Libs</title>
+</head>
+
+<body class="bg-background bg-cover bg-fixed">
+    <!-- Back to Main Menu button -->
+    <a href="../index.html">
+        <button type="button"
+            class="ms-5 mt-5 px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Back
+            to Main Menu</button>
+    </a>
+
+    <!-- Header text -->
+    <h1 class="text-5xl lg:text-7xl font-bold text-center pt-24 pb-24">Mad Libs</h1>
+    <h2 class="text-2xl lg:text-5xl text-center pb-20">Follow the prompts below to create a Mad Lib</h2>
+
+    <!-- Div for API Result text -->
+    <div id="madLibsDiv"></div>
+
+    <!-- Input field first row -->
+    <div class="grid lg:grid-cols-5 px-20 gap-8">
+        <div>
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Hero
+                Name</label>
+            <input type="text" id="madLibsHeroName"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="">
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Planet
+                Name</label>
+            <input type="text" id="madLibsPlanetName"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="">
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Fictitious
+                Species Name</label>
+            <input type="text" id="madLibsSpeciesName"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="">
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Plural
+                Noun</label>
+            <input type="text" id="madLibsPluralNoun"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="">
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Singular
+                Noun</label>
+            <input type="text" id="madLibsSingularNoun1"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div>
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Another
+                Singular Noun</label>
+            <input type="text" id="madLibsSingularNoun2"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="">
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Verb Ending in
+                -ing</label>
+            <input type="text" id="madLibsVerb1"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="">
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Another
+                Verb</label>
+            <input type="text" id="madLibsVerb2"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="">
+            <label for="base-input"
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Adjective</label>
+            <input type="text" id="madLibsAdjective1"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+        <div class="">
+            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Another
+                Adjective</label>
+            <input type="text" id="madLibsAdjective2"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        </div>
+    </div>
+
+    <!-- Submit button -->
+    <div class="flex justify-center mb-5">
+        <button type="button" id="madLibsButton"
+            class="ms-5 mt-7 px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+    </div>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

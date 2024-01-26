@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/output.css" rel="stylesheet">
+    <title>Restaurant Picker</title>
+</head>
+
+<body class="bg-background bg-cover bg-fixed">
+    <!-- Back to Main Menu button -->
+    <a href="../index.html">
+        <button type="button"
+            class="ms-5 mt-5 px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Back
+            to Main Menu</button>
+    </a>
+
+    <!-- Header text -->
+    <h1 class="text-5xl lg:text-7xl font-bold text-center pt-24 pb-24">Restaurant Picker</h1>
+    <h2 class="text-2xl lg:text-5xl text-center pb-20">Select an option below to randomly generate a restaurant</h2>
+
+    <!-- Div for API Result text -->
+    <div id="restaurantPickerDiv"></div>
+
+    <div class="p-20 grid lg:grid-cols-3 gap-8">
+        <button type="button" id="restaurantPickerFastFoodButton"
+            class="px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Fast
+            Food</button>
+        <button type="button" id="restaurantPickerPizzaButton"
+            class="px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Pizza</button>
+        <button type="button" id="restaurantPickerRestaurantButton"
+            class="px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Restaurant</button>
+    </div>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+</body>
+
+</html>

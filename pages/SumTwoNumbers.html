@@ -12,35 +12,36 @@
     <!-- Back to Main Menu button -->
     <a href="../index.html">
         <button type="button"
-            class="ms-5 mt-5 px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Back
+            class="ms-5 mt-5 px-5 py-2.5 text-xl font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Back
             to Main Menu</button>
     </a>
 
     <!-- Header text -->
-    <h1 class="text-5xl lg:text-7xl font-bold text-center pt-24 pb-24">Sum Two Numbers</h1>
-    <h2 class="text-2xl lg:text-5xl text-center pb-20">Enter two numbers below to be summed</h2>
+    <h1 class="text-6xl lg:text-8xl font-bold text-center pt-24 pb-24">Sum Two Numbers</h1>
+    <h2 class="text-3xl lg:text-6xl text-center pb-16">Enter two numbers below to be summed</h2>
 
     <!-- Div for API Result text -->
-    <div id="sumTwoNumbersDiv"></div>
+    <div class="grid text-center mb-10 text-3xl lg:text-4xl" id="sumTwoNumbersDiv"></div>
 
     <!-- Input field and submit button -->
     <div class="flex flex-col justify-center items-center gap-4 sm:flex-row">
         <div>
-            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number 1</label>
+            <label for="sumTwoNumbersInput1" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Number 1</label>
             <input type="text" id="sumTwoNumbersInput1"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
         </div>
         <div class="">
-            <label for="base-input" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Number 2</label>
+            <label for="sumTwoNumbersInput2" class="block mb-2 text-xl font-medium text-gray-900 dark:text-white">Number 2</label>
             <input type="text" id="sumTwoNumbersInput2"
-                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-xl rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-64 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
         </div>
 
         <button type="button" id="sumTwoNumbersButton"
-            class="mt-7 px-5 py-2.5 text-sm font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+            class="mt-auto px-5 py-2.5 text-xl font-medium text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
 
     </div>
 
+    <script src="../scripts/app.js"></script>
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
 </body>
 
